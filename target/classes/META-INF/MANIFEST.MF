@@ -1,7 +1,8 @@
 Manifest-Version: 1.0
 Built-By: elyton_pereira
 Build-Jdk: 19.0.1
-Class-Path: libs/postgresql-42.6.0.jar libs/checker-qual-3.31.0.jar
+Class-Path: libs/postgresql-42.6.0.jar libs/checker-qual-3.31.0.jar libs
+ /commons-codec-1.16.0.jar
 Main-Class: br.com.senai.usuariosmktplace.core.InitApp
 Created-By: Maven Integration for Eclipse
 
