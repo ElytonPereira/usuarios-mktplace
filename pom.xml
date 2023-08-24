@@ -3,20 +3,22 @@
   <groupId>br.com.senai</groupId>
   <artifactId>usuarios-mktplace</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-
+  <dependencies>		  
+	<dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>32.1.2-jre</version>
+	</dependency>
 <dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
     <version>42.6.0</version>
 </dependency>
-
 	<dependency>
 	    <groupId>commons-codec</groupId>
 	    <artifactId>commons-codec</artifactId>
 	    <version>1.16.0</version>
 	</dependency>
-
   </dependencies>
   <build>    
     <plugins>
