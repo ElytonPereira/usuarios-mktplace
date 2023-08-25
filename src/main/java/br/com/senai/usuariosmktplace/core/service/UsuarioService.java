@@ -68,9 +68,13 @@ public class UsuarioService {
 		if (!partesDoNome.isEmpty()) {
 			for(int i = 1; i < partesDoNome.size(); i++) {
 				loginGerado = partesDoNome.get(0) + "." + partesDoNome.get(i);
+				if (loginGerado.length() > 40) {
+					loginGerado = loginGerado.substring(0, 40);
+				}
 				usuarioEncontrado = dao.buscarPor(loginGerado);
 				
 				if (usuarioEncontrado == null) {
+					
 					return loginGerado;
 					
 				}									
@@ -118,9 +122,5 @@ public class UsuarioService {
 		Preconditions.checkArgument(isNomeValido, "O nome é obrigatório e deve conter entre 5 e 120 caracteries e conter sobrenome também");
 		this.validar(senha);
 		
-	}
-	
-	
-	
-	
+	}	
 }
